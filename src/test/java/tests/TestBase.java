@@ -3,6 +3,7 @@ package tests;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -67,15 +69,20 @@ public class TestBase extends AbstractTestNGCucumberTests{
 		else if (browserName.equalsIgnoreCase("safari")) {
 			driver = new SafariDriver(); 
 		}
+		Proxy proxy = new Proxy();
+		proxy.setHttpProxy("139.7.95.172:8080");
+		ChromeOptions options = new ChromeOptions();
+		DesiredCapabilities dc = new DesiredCapabilities();
+		options.setCapability("proxy", proxy);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-		driver.navigate().to("http://demo.nopcommerce.com/");
+		driver.navigate().to("https://simplicity.wf-de.vodafone.com/simplicity/pages/helpers/subpages/cookie-switcher.html");
 	} 
 
 	@AfterSuite
 	public void stopDriver() 
 	{
-		driver.quit();
+		//driver.quit();
 	}
 
 	// take screenshot when test case fail and add it in the Screenshot folder
