@@ -1,5 +1,7 @@
 package runner;
 
+import org.junit.runner.RunWith;
+
 import tests.TestBase;
 import cucumber.api.CucumberOptions;
 

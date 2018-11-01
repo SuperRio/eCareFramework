@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="eCare Framework" >
+	<parameter name="browser" value="chrome" />
+
+  <test name="pages">
+    <classes>
+     
+      <class name="tests.ViewDashboard"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
