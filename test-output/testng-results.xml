@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14292" started-at="2018-11-01T14:50:50Z" finished-at="2018-11-01T14:51:04Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@20322d26]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="14292" started-at="2018-11-01T14:50:50Z" finished-at="2018-11-01T14:51:04Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@20322d26]" name="startDriver" is-config="true" duration-ms="8366" started-at="2018-11-01T14:50:41Z" finished-at="2018-11-01T14:50:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@20322d26]" name="setUpClass" is-config="true" duration-ms="266" started-at="2018-11-01T14:50:50Z" finished-at="2018-11-01T14:50:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@20322d26]" name="feature" duration-ms="13872" started-at="2018-11-01T14:50:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-11-01T14:51:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[View Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@20322d26]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2018-11-01T14:51:04Z" finished-at="2018-11-01T14:51:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=feature status=SUCCESS method=AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@20322d26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="56" started-at="2018-11-01T14:51:04Z" finished-at="2018-11-01T14:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@20322d26]" name="stopDriver" is-config="true" duration-ms="0" started-at="2018-11-01T14:51:04Z" finished-at="2018-11-01T14:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
