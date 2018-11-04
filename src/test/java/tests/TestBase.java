@@ -82,7 +82,7 @@ public class TestBase extends AbstractTestNGCucumberTests{
 	@AfterSuite
 	public void stopDriver() 
 	{
-		//driver.quit();
+		driver.quit();
 	}
 
 	// take screenshot when test case fail and add it in the Screenshot folder
