@@ -13,10 +13,6 @@
 	<profiles>
 		<profile>
 			<id>go</id>
-
-
-
-
 			<build>
 				<pluginManagement>
 					<plugins>
