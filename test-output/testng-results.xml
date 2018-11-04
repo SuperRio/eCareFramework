@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="eCare Framework" duration-ms="16568" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:44Z">
+  <suite name="eCare Framework" duration-ms="17385" started-at="2018-11-04T17:24:10Z" finished-at="2018-11-04T17:24:27Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="pages" duration-ms="16568" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:44Z">
+    <test name="pages" duration-ms="17385" started-at="2018-11-04T17:24:10Z" finished-at="2018-11-04T17:24:27Z">
       <class name="tests.ViewDashboard">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="startDriver" is-config="true" duration-ms="9686" started-at="2018-11-04T12:50:18Z" finished-at="2018-11-04T12:50:28Z">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="startDriver" is-config="true" duration-ms="19908" started-at="2018-11-04T17:23:50Z" finished-at="2018-11-04T17:24:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="setUpClass" is-config="true" duration-ms="287" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:28Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="setUpClass" is-config="true" duration-ms="267" started-at="2018-11-04T17:24:10Z" finished-at="2018-11-04T17:24:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="i_the_user_is_logged_in()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="i_the_user_is_logged_in" duration-ms="9767" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:38Z">
+        <test-method status="PASS" signature="i_the_user_is_logged_in()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="i_the_user_is_logged_in" duration-ms="10519" started-at="2018-11-04T17:24:10Z" finished-at="2018-11-04T17:24:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_the_user_is_logged_in -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="2" started-at="2018-11-04T12:50:38Z" finished-at="2018-11-04T12:50:38Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2018-11-04T17:24:21Z" finished-at="2018-11-04T17:24:21Z">
           <params>
             <param index="0">
               <value>
@@ -40,11 +40,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="i_go_to_dashboard()[pri:1, instance:tests.ViewDashboard@5025a98f]" name="i_go_to_dashboard" duration-ms="6361" started-at="2018-11-04T12:50:38Z" finished-at="2018-11-04T12:50:44Z">
+        <test-method status="PASS" signature="i_go_to_dashboard()[pri:1, instance:tests.ViewDashboard@5025a98f]" name="i_go_to_dashboard" duration-ms="6497" started-at="2018-11-04T17:24:21Z" finished-at="2018-11-04T17:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_go_to_dashboard -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2018-11-04T17:24:27Z" finished-at="2018-11-04T17:24:27Z">
           <params>
             <param index="0">
               <value>
@@ -55,11 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="i_The_user_shall_view_his_contracts_and_subscribers()[pri:2, instance:tests.ViewDashboard@5025a98f]" name="i_The_user_shall_view_his_contracts_and_subscribers" duration-ms="53" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+        <test-method status="PASS" signature="i_The_user_shall_view_his_contracts_and_subscribers()[pri:2, instance:tests.ViewDashboard@5025a98f]" name="i_The_user_shall_view_his_contracts_and_subscribers" duration-ms="20" started-at="2018-11-04T17:24:27Z" finished-at="2018-11-04T17:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_The_user_shall_view_his_contracts_and_subscribers -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2018-11-04T17:24:27Z" finished-at="2018-11-04T17:24:27Z">
           <params>
             <param index="0">
               <value>
@@ -70,11 +70,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="tearDownClass" is-config="true" duration-ms="45" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="tearDownClass" is-config="true" duration-ms="21" started-at="2018-11-04T17:24:27Z" finished-at="2018-11-04T17:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="stopDriver" is-config="true" duration-ms="1" started-at="2018-11-04T12:50:45Z" finished-at="2018-11-04T12:50:45Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="stopDriver" is-config="true" duration-ms="1" started-at="2018-11-04T17:24:27Z" finished-at="2018-11-04T17:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
