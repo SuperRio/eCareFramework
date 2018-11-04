@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14659" started-at="2018-11-04T12:16:45Z" finished-at="2018-11-04T12:17:00Z">
+  <suite name="eCare Framework" duration-ms="16568" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:44Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@20322d26]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="14659" started-at="2018-11-04T12:16:45Z" finished-at="2018-11-04T12:17:00Z">
-      <class name="runner.TestRunner">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@20322d26]" name="startDriver" is-config="true" duration-ms="11046" started-at="2018-11-04T12:16:34Z" finished-at="2018-11-04T12:16:45Z">
+    <test name="pages" duration-ms="16568" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:44Z">
+      <class name="tests.ViewDashboard">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="startDriver" is-config="true" duration-ms="9686" started-at="2018-11-04T12:50:18Z" finished-at="2018-11-04T12:50:28Z">
           <params>
             <param index="0">
               <value>
@@ -21,41 +21,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@20322d26]" name="setUpClass" is-config="true" duration-ms="298" started-at="2018-11-04T12:16:45Z" finished-at="2018-11-04T12:16:45Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="setUpClass" is-config="true" duration-ms="287" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@20322d26]" name="feature" duration-ms="13976" started-at="2018-11-04T12:16:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-11-04T12:17:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[View Dashboard]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="i_the_user_is_logged_in()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="i_the_user_is_logged_in" duration-ms="9767" started-at="2018-11-04T12:50:28Z" finished-at="2018-11-04T12:50:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@20322d26]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2018-11-04T12:17:00Z" finished-at="2018-11-04T12:17:00Z">
+        </test-method> <!-- i_the_user_is_logged_in -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="2" started-at="2018-11-04T12:50:38Z" finished-at="2018-11-04T12:50:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=feature status=SUCCESS method=AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@20322d26] output={null}]]]>
+                <![CDATA[[TestResult name=i_the_user_is_logged_in status=SUCCESS method=ViewDashboard.i_the_user_is_logged_in()[pri:0, instance:tests.ViewDashboard@5025a98f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="109" started-at="2018-11-04T12:17:00Z" finished-at="2018-11-04T12:17:00Z">
+        <test-method status="PASS" signature="i_go_to_dashboard()[pri:1, instance:tests.ViewDashboard@5025a98f]" name="i_go_to_dashboard" duration-ms="6361" started-at="2018-11-04T12:50:38Z" finished-at="2018-11-04T12:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_go_to_dashboard -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=i_go_to_dashboard status=SUCCESS method=ViewDashboard.i_go_to_dashboard()[pri:1, instance:tests.ViewDashboard@5025a98f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="i_The_user_shall_view_his_contracts_and_subscribers()[pri:2, instance:tests.ViewDashboard@5025a98f]" name="i_The_user_shall_view_his_contracts_and_subscribers" duration-ms="53" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_The_user_shall_view_his_contracts_and_subscribers -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ViewDashboard@5025a98f]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=i_The_user_shall_view_his_contracts_and_subscribers status=SUCCESS method=ViewDashboard.i_The_user_shall_view_his_contracts_and_subscribers()[pri:2, instance:tests.ViewDashboard@5025a98f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="tearDownClass" is-config="true" duration-ms="45" started-at="2018-11-04T12:50:44Z" finished-at="2018-11-04T12:50:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@20322d26]" name="stopDriver" is-config="true" duration-ms="0" started-at="2018-11-04T12:17:00Z" finished-at="2018-11-04T12:17:00Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ViewDashboard@5025a98f]" name="stopDriver" is-config="true" duration-ms="1" started-at="2018-11-04T12:50:45Z" finished-at="2018-11-04T12:50:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.ViewDashboard -->
+    </test> <!-- pages -->
+  </suite> <!-- eCare Framework -->
 </testng-results>
