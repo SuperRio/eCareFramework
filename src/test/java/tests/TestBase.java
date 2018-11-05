@@ -20,8 +20,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 import utilities.Helper;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 public class TestBase extends AbstractTestNGCucumberTests{
 	public static WebDriver driver ; 
@@ -74,7 +74,9 @@ public class TestBase extends AbstractTestNGCucumberTests{
 		ChromeOptions options = new ChromeOptions();
 		DesiredCapabilities dc = new DesiredCapabilities();
 		options.setCapability("proxy", proxy);
-		driver.manage().window().maximize();
+		options.addArguments("--headless");
+		options.addArguments("--window-size=1920,1080");
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		driver.navigate().to("https://simplicity.wf-de.vodafone.com/simplicity/pages/helpers/subpages/cookie-switcher.html");
 	} 
