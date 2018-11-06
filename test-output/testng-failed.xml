@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [eCare Framework]">
-  <parameter name="browser" value="chrome-headless"/>
+  <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="pages(failed)">
     <classes>
       <class name="tests.ViewDashboard">
@@ -10,7 +10,9 @@
           <include name="setUpClass"/>
           <include name="stopDriver"/>
           <include name="i_The_user_shall_view_his_contracts_and_subscribers"/>
+          <include name="i_go_to_dashboard"/>
           <include name="screenshotOnFailure"/>
+          <include name="i_the_user_is_logged_in"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- tests.ViewDashboard -->
