@@ -52,7 +52,7 @@ public class TestBase extends AbstractTestNGCucumberTests{
 
 	@BeforeSuite
 	@Parameters({"browser"})
-	public void startDriver(@Optional("chrome-headless") String browserName) 
+	public void startDriver(@Optional("chrome") String browserName) 
 	{
 		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
@@ -96,20 +96,22 @@ public class TestBase extends AbstractTestNGCucumberTests{
 			driver = new ChromeDriver(options);
 
 		}
-		/*	Proxy proxy = new Proxy();
+		//ChromeOptions options = new ChromeOptions();
+		//options.addArguments("--proxy-server='direct://'");
+		//options.addArguments("--proxy-bypass-list=*");
+		Proxy proxy = new Proxy();
 		proxy.setHttpProxy("139.7.95.172:8080");
 		ChromeOptions options = new ChromeOptions();
-		DesiredCapabilities dc = new DesiredCapabilities();
 		options.setCapability("proxy", proxy);
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.navigate().to("https://simplicity.wf-de.vodafone.com/simplicity/pages/helpers/subpages/cookie-switcher.html");
-		 */
+		 
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		/*driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://zuhauseplus.vodafone.de/kombi-pakete/");
 		driver.manage().addCookie(new Cookie("simplicity-draft","develop",".vodafone.de","/",null));
-
+*/
 
 
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="browser" value="&quot;chrome&quot;"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="tests.ViewDashboard">
@@ -16,16 +15,6 @@
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- tests.ViewDashboard -->
-      <class name="runner.TestRunner">
-        <methods>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="feature"/>
-          <include name="screenshotOnFailure"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- runner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
