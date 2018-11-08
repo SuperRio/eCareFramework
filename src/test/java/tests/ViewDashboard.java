@@ -21,23 +21,29 @@ public class ViewDashboard extends TestBase{
 	public void i_the_user_is_logged_in() throws Throwable {
 		dashboardPage = new DashboardPage(driver);
 		//dashboard.detectCookieDdl();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		/*JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement element = driver.findElement(By.xpath("//select[@id='dropDownSwitcher']"));
 		js.executeScript("arguments[0].setAttribute('style', 'display: true;')",element);
 		Select ss = new Select(driver.findElement(By.xpath("//select[@id='dropDownSwitcher']")));
 		ss.selectByValue("develop");
-		dashboardPage.clickOnDevelopmentStubs();
-		driver.get("https://simplicity.wf-de.vodafone.com/meinvodafone/account/");
-		// if you want to go to SIT environment use the below link
-		//driver.get("https://www.vodafone.de/meinvodafone/account");
+		dashboardPage.clickOnDevelopmentStubs();*/
+		
+		//This is for ST ONLY
+		//driver.get("https://simplicity.wf-de.vodafone.com/meinvodafone/account/");
+		
+		
+		// This is for SIT ONLY
+		driver.get("https://www.vodafone.de/meinvodafone/account");     
 	}
 
 	@Test(priority=1)
 	@When("^I  go to dashboard$")
 	public void i_go_to_dashboard() throws Throwable {
-		String username = "marie";
-		String password = "marie";
-		dashboardPage.LoginSt(username, password);
+		//String usernameST = "marie";
+		//String passwordST = "marie";
+		String usernameSIT = "Vodafone Kay 02B";
+		String passwordSIT = "GerKonPu1999";
+		dashboardPage.LoginSt(usernameSIT, passwordSIT);
 		dashboardPage.ClickToGoToDashboard();
 	}
 
@@ -45,7 +51,8 @@ public class ViewDashboard extends TestBase{
 	@Then("^I  The user shall view his contracts and subscribers$")
 	public void i_The_user_shall_view_his_contracts_and_subscribers() throws Throwable {
 		System.out.println(driver.getCurrentUrl());
-		Assert.assertEquals(driver.getCurrentUrl(), "https://simplicity.wf-de.vodafone.com/meinvodafone/services/");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.vodafone.de/meinvodafone/services/");
+		//Assert.assertEquals(driver.getCurrentUrl(), "https://simplicity.wf-de.vodafone.com/meinvodafone/services/");
 		String mobile = driver.findElement(By.xpath("//a[@id='dashboard:mobile']")).getAttribute("accordion-id");
 		System.out.println(mobile);
 		Assert.assertEquals(mobile, "dashboard:mobile");

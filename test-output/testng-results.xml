@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13656" started-at="2018-11-08T15:26:54Z" finished-at="2018-11-08T15:27:08Z">
+  <suite name="Default suite" duration-ms="16348" started-at="2018-11-08T16:22:37Z" finished-at="2018-11-08T16:22:53Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@1f28c152]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="13656" started-at="2018-11-08T15:26:54Z" finished-at="2018-11-08T15:27:08Z">
+    <test name="Default test" duration-ms="16348" started-at="2018-11-08T16:22:37Z" finished-at="2018-11-08T16:22:53Z">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@1f28c152]" name="startDriver" is-config="true" duration-ms="8078" started-at="2018-11-08T15:26:46Z" finished-at="2018-11-08T15:26:54Z">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@1f28c152]" name="startDriver" is-config="true" duration-ms="7836" started-at="2018-11-08T16:22:29Z" finished-at="2018-11-08T16:22:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[chrome-headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@1f28c152]" name="setUpClass" is-config="true" duration-ms="264" started-at="2018-11-08T15:26:54Z" finished-at="2018-11-08T15:26:55Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@1f28c152]" name="setUpClass" is-config="true" duration-ms="339" started-at="2018-11-08T16:22:37Z" finished-at="2018-11-08T16:22:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@1f28c152]" name="feature" duration-ms="13213" started-at="2018-11-08T15:26:55Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-11-08T15:27:08Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@1f28c152]" name="feature" duration-ms="15749" started-at="2018-11-08T16:22:37Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-11-08T16:22:53Z">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@1f28c152]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2018-11-08T15:27:08Z" finished-at="2018-11-08T15:27:08Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@1f28c152]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2018-11-08T16:22:53Z" finished-at="2018-11-08T16:22:53Z">
           <params>
             <param index="0">
               <value>
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1f28c152]" name="tearDownClass" is-config="true" duration-ms="73" started-at="2018-11-08T15:27:08Z" finished-at="2018-11-08T15:27:08Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1f28c152]" name="tearDownClass" is-config="true" duration-ms="114" started-at="2018-11-08T16:22:53Z" finished-at="2018-11-08T16:22:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@1f28c152]" name="stopDriver" is-config="true" duration-ms="938" started-at="2018-11-08T15:27:08Z" finished-at="2018-11-08T15:27:09Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@1f28c152]" name="stopDriver" is-config="true" duration-ms="685" started-at="2018-11-08T16:22:53Z" finished-at="2018-11-08T16:22:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
