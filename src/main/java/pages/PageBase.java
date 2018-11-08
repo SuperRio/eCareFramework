@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class PageBase {
-	protected WebDriver drvier ; 
+	protected WebDriver drv ; 
 	public JavascriptExecutor jse ; 
 	public Select select ; 
 	public Actions action ; 
